@@ -1,3 +1,6 @@
+
+Write-Host 'In client.ps1 file.'
+
 # Accessing environment variables
 $logFilename = $env:logfilename
 $errorFilename = $env:errorFilename
