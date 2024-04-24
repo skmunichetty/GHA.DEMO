@@ -17,7 +17,7 @@ jobs:
             POSTGRES_PORT: 5432
             logfilename: example.log
             errorFilename: error.log
-        run: chmod +x ./.github/scripts/client.ps1
+        run: chmod +x ./scripts/client.ps1
 
       # - uses: actions/setup-node@v4
       #   with:
