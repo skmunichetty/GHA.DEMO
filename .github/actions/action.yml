@@ -5,6 +5,6 @@ outputs: {}
 runs:
   using: "composite"
   steps:
-    - shell: powershell
+    - shell: pwsh
       run: Write-Host 'Hello world'
      
