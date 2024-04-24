@@ -10,9 +10,8 @@ jobs:
       - uses: ./.github/actions/
         name: action demo
       
-      - uses: PowerShell/setup-powershell@v1
-      - name: Modify script permissions
-        run: chmod +x ./.github/scripts/client.ps1
+      # - name: Modify script permissions
+      #   run: chmod +x ./.github/scripts/client.ps1
 
       - name: Test variables
         env:
@@ -20,7 +19,7 @@ jobs:
             POSTGRES_PORT: 5432
             logfilename: example.log
             errorFilename: error.log
-        run: ./.github/scripts/client.ps1
+        run: chmod +x ./.github/scripts/client.ps1
 
       - uses: actions/setup-node@v4
         with:
