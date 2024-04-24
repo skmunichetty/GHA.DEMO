@@ -9,6 +9,10 @@ jobs:
 
       - uses: ./.github/actions/
         name: action demo
+      
+      - uses: PowerShell/setup-powershell@v1
+      - name: Modify script permissions
+        run: chmod +x ./.github/scripts/client.ps1
 
       - name: Test variables
         env:
