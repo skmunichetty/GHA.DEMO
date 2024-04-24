@@ -11,12 +11,12 @@ jobs:
         name: action demo
 
       - name: Test variables
-        run: |
-          $env:POSTGRES_HOST = "postgres"
-          $env:POSTGRES_PORT = "5432"
-          $env:logfilename = "example.log"
-          $env:errorFilename = "error.log"
-          pwsh -File client.ps1
+        env:
+            POSTGRES_HOST: postgres
+            POSTGRES_PORT: 5432
+            logfilename: example.log
+            errorFilename: error.log
+        run: pwsh -File client.ps1
 
       - uses: actions/setup-node@v4
         with:
