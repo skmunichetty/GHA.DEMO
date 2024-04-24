@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gha.demo", "gha.demo\gha.demo.csproj", "{20DC3606-A8C4-421E-9C9B-D002B273363C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gha.demo.tests", "gha.demo.tests\gha.demo.tests.csproj", "{6C5A6BAA-3146-45A1-9E26-7597B12AAABC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{20DC3606-A8C4-421E-9C9B-D002B273363C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20DC3606-A8C4-421E-9C9B-D002B273363C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20DC3606-A8C4-421E-9C9B-D002B273363C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C5A6BAA-3146-45A1-9E26-7597B12AAABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C5A6BAA-3146-45A1-9E26-7597B12AAABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C5A6BAA-3146-45A1-9E26-7597B12AAABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C5A6BAA-3146-45A1-9E26-7597B12AAABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
