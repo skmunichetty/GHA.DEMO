@@ -16,7 +16,7 @@ jobs:
             POSTGRES_PORT: 5432
             logfilename: example.log
             errorFilename: error.log
-        run: pwsh -File scripts/client.ps1
+        run: pwsh -File $GITHUB_WORKSPACE/scripts/client.ps1
 
       - uses: actions/setup-node@v4
         with:
