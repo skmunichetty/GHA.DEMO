@@ -3,7 +3,8 @@ description: 'Prints "Hello, World!"'
 inputs: {}
 outputs: {}
 runs:
-  using: 'shell'
-  command: |
-    echo "Hello, World!"
+  using: "composite"
+  steps:
+    - run: Write-host 'Hello world'
+      shell: powershell
     
