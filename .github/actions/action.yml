@@ -6,3 +6,4 @@ runs:
   using: 'shell'
   command: |
     echo "Hello, World!"
+    
