@@ -17,7 +17,7 @@ jobs:
             errorFilename: error.log
         shell: pwsh
         run: |
-          chmod +x ./client.ps1
+          chmod +x ./.github/client.ps1
 
       # - uses: actions/setup-node@v4
       #   with:
