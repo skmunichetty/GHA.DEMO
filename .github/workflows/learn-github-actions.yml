@@ -13,10 +13,9 @@ jobs:
 
       - name: Test variables
         env:
-            POSTGRES_HOST: postgres
-            POSTGRES_PORT: 5432
             logfilename: example.log
             errorFilename: error.log
+        shell: pwsh
         run: |
           chmod +x ./client.ps1
 
