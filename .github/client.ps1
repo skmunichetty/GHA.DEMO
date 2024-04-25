@@ -5,8 +5,8 @@ Write-Host 'In client.ps1 file.'
 # $ErrorActionPreference = "Continue"
 
 # # Accessing environment variables
-# $logFilename = $env:logfilename
-# $errorFilename = $env:errorFilename
+$logFilename = $env:logfilename
+$errorFilename = $env:errorFilename
 
 # # Printing variables
 Write-Host "Log Filename: $logFilename"
