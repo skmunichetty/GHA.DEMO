@@ -9,15 +9,16 @@ jobs:
 
       - uses: ./.github/actions/
         name: action demo
-      
 
-      - name: Test variables
+      - uses: actions/checkout@v1
+      - name: Test variables      
+        run: |
+            chmod +x ./.github/client.ps1
+        shell: pwsh
         env:
             logfilename: example.log
             errorFilename: error.log
-        shell: pwsh
-        run: |
-          chmod +x ./.github/client.ps1
+        
 
       # - uses: actions/setup-node@v4
       #   with:
