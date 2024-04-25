@@ -26,5 +26,5 @@ jobs:
       run: dotnet restore ./gha.demo/gha.demo/gha.demo.csproj
     - name: Build
       run: dotnet build ./gha.demo/gha.demo/gha.demo.csproj --configuration Release --no-restore
-    # - name: Test
-    #   run: dotnet test --no-build --verbosity normal
+    - name: Test
+      run: dotnet test ./gha.demo/gha.demo.tests/gha.demo.tests.csproj --no-build --verbosity normal
