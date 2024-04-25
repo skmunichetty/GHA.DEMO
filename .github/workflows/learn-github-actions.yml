@@ -12,7 +12,7 @@ jobs:
 
       - uses: actions/checkout@v1
       - name: Test variables      
-        run: ./client.ps1
+        run: ./.github/client.ps1
         shell: pwsh
         env:
             logfilename: example.log
