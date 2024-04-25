@@ -39,5 +39,5 @@ jobs:
         aws-region: ap-southeast-2
     - name: Deploy to Elastic Beanstalk
       run: |
-        aws elasticbeanstalk create-application-version --application-name gha-demo --version-label gha-demo --source-bundle S3Bucket=gha-demo1,S3Key=publish.zip
+        aws elasticbeanstalk create-application-version --application-name gha-demo --version-label gha-demo --source-bundle S3Bucket=elasticbeanstalk-ap-southeast-2-435849147344/resources/environments/e-w4q7hpgf77/_runtime/versions/manifest_1714053161343,S3Key=publish.zip
         aws elasticbeanstalk update-environment --application-name gha-demo --environment-name Gha-demo-env --version-label gha-demo
